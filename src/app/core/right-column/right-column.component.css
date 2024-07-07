@@ -1,11 +1,10 @@
 .fixed-height-card {
-  height: 210px; /* Adjust the height as needed */
+  height: 300px; /* Adjust the height as needed */
   overflow: hidden; /* Hide overflow content */
   display: flex;
   flex-direction: column;
 }
 
 .fixed-height-card .card-body {
-/*  overflow-y: auto;  Add vertical scroll if content overflows */
   flex: 1; /* Make the card body take up the remaining space */
 }
