@@ -1,0 +1,51 @@
+.navbar-brand {
+    position: relative;
+    overflow: hidden;
+    color: #333; /* Brand text color */
+  }
+
+  .brand-text {
+    display: inline-block;
+    transition: transform 0.3s ease-out;
+    font-size: 1.8rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #ff5722; /* Orange color */
+  }
+
+  .navbar-brand:hover .brand-text {
+    transform: translateY(-3px) scale(1.1); /* Adjust animation as desired */
+  }
+
+  .navbar-toggler-icon {
+    background-color: #ff5722; /* Orange color for toggler icon */
+  }
+
+  .nav-link {
+    transition: color 0.2s ease;
+    color: #333; /* Navigation links color */
+  }
+
+  .nav-link:hover {
+    color: #666; /* Hover color for navigation links */
+  }
+
+  .btn-orange {
+    background-color: #ff5722; /* Orange button background color */
+    color: #fff; /* Button text color */
+    border: none;
+  }
+
+  .btn-orange:hover {
+    background-color: #f4511e; /* Darker shade on hover */
+  }
+
+  /* Add border to navbar */
+.navbar {
+  border: 1px solid #ccc;
+}
+
+/* Align navbar items properly */
+.navbar-nav .nav-link {
+  margin-left: 10px;
+  margin-right: 10px;
+}
