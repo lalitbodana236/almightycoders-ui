@@ -14,9 +14,12 @@ export class CalendarComponent implements OnInit {
   calendarOptions = {
     plugins: [dayGridPlugin],
     initialView: 'dayGridMonth',
-    events: [
-      { title: 'Event 1', date: '2024-07-10' },
-      { title: 'Event 2', date: '2024-07-15' },
-    ],
+    themeSystem: 'bootstrap',
+    headerToolbar: {
+      left: '', // Empty to remove 'prev', 'next', and 'today' buttons
+      center: 'title', // Only display the title
+      right: '', // Empty to remove 'prev', 'next', and 'today' buttons
+    },
+    events: [{ title: 'Event 1', date: '2024-07-10' }],
   };
 }
