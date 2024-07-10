@@ -1,0 +1,10 @@
+<div class="row">
+  <!-- topic list -->
+  <div class="col-sm-3">
+    <app-topic-list (topicSelected)="onTopicSelected($event)"></app-topic-list>
+  </div>
+  <!-- topic details -->
+  <div class="col-sm-9">
+    <app-topic-details [selectedTopic]="selectedTopic"></app-topic-details>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<!-- topic-details.component.html -->
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">
+      {{ selectedTopic ? selectedTopic : "Special title treatment" }}
+    </h5>
+    <p class="card-text">
+      {{
+        selectedTopic
+          ? "Details for " + selectedTopic
+          : "Sometimes caching issues can cause problems. Clear the npm cache and restart your development server:".repeat(
+              10
+            )
+      }}
+    </p>
+  </div>
+</div>

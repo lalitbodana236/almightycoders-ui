@@ -1,0 +1,46 @@
+<!-- The provided HTML code represents a layout structure for a web page. Here's a breakdown of what each
+part is doing: -->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <app-card-section
+        [cardItems]="cardItems"
+        [loadCards]="loadCards.bind(this)"
+      ></app-card-section>
+
+      <app-pagination
+        [currentPage]="currentPage"
+        [totalPages]="Math.ceil(cardItems.length / pageSize)"
+        (previousPage)="goToPreviousPage()"
+        (nextPage)="goToNextPage()"
+      ></app-pagination>
+
+      <div class="row mt-2">
+        <div class="col-sm-12">
+          <!-- Content for the new row -->
+          <div class="card text-center">
+            <div class="card-header">Tags</div>
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">
+                With supporting text below as a natural lead-in to additional
+                content.
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <div class="card-footer text-muted">2 days ago</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- New row added below the existing one -->
+      <div class="row mt-5">
+        <app-center-section></app-center-section>
+      </div>
+    </div>
+
+    <div class="col-sm-3">
+      <app-right-column [cardItems]="cardItems"></app-right-column>
+    </div>
+  </div>
+</div>
