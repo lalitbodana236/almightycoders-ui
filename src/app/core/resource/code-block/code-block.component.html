@@ -7,7 +7,10 @@
     <span>{{ language }}</span>
     <div class="flex items-center">
       <span data-state="closed">
-        <button class="flex gap-1 items-center" (click)="copyCode()">
+        <button
+          class="btn btn-primary btn-sm flex gap-1 items-center"
+          (click)="copyCode()"
+        >
           <i class="bi bi-files"></i> <span>{{ copyButtonText }}</span>
         </button>
       </span>

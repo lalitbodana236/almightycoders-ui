@@ -86,3 +86,13 @@
   width: 1rem;
   height: 1rem;
 }
+
+.btn-primary {
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+}
+
+.btn-primary:hover {
+  background-color: #e0e0e0; /* Set hover background color */
+}
+
