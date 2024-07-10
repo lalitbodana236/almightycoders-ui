@@ -4,7 +4,7 @@
     <h5 class="card-title">
       {{ selectedTopic ? selectedTopic : "Special title treatment" }}
     </h5>
-    <p class="card-text">
+    <p class="card-text" #cardContent>
       {{
         selectedTopic
           ? "Details for " + selectedTopic
@@ -13,5 +13,6 @@
             )
       }}
     </p>
+    <app-code-block language="css" [code]="codeSnippet"></app-code-block>
   </div>
 </div>

@@ -6,3 +6,7 @@ Calender
 npm install @fullcalendar/angular @fullcalendar/core @fullcalendar/daygrid
 
 npm install @angular/animations@14.3.0 @angular/common@14.3.0 @angular/compiler@14.3.0 @angular/compiler-cli@14.3.0 @angular/core@14.3.0 @angular/forms@14.3.0 @angular/platform-browser@14.3.0 @angular/platform-browser-dynamic@14.3.0 @angular/router@14.3.0 @angular-devkit/architect@0.1403.0 @angular-devkit/build-angular@14.3.0 @angular-devkit/core@14.3.0 @angular-devkit/schematics@14.3.0 @schematics/angular@14.3.0 rxjs@7.5.7 typescript@4.7.4
+
+
+npm install highlight.js
+npm install @highlightjs/angular-highlight-js

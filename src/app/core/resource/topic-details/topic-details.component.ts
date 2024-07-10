@@ -42,4 +42,27 @@ export class TopicDetailsComponent implements OnInit {
       );
     });
   }
+
+  copyContent(content: HTMLElement) {
+    const text = content.innerText;
+    navigator.clipboard
+      .writeText(text)
+      .then(() => {
+        alert('Content copied to clipboard!');
+      })
+      .catch((err) => {
+        console.error('Failed to copy content: ', err);
+      });
+  }
+
+  codeSnippet: string = `
+  .card {
+    transition: height 0.3s ease-in-out;
+    min-height: 200px; /* ensure the card has a minimum height */
+  }
+
+  .btn-primary {
+    margin-top: 10px;
+  }
+  `;
 }

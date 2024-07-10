@@ -3,3 +3,7 @@
   transition: height 0.3s ease-in-out;
   min-height: 500px; /* ensure the card has a minimum height */
 }
+
+.btn-primary {
+  margin-top: 10px;
+}
