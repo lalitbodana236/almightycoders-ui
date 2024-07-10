@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CodeBlockComponent } from './code-block.component';
+import { ClipBoardComponent } from './clip-board.component';
 
-describe('CodeBlockComponent', () => {
-  let component: CodeBlockComponent;
-  let fixture: ComponentFixture<CodeBlockComponent>;
+describe('ClipBoardComponent', () => {
+  let component: ClipBoardComponent;
+  let fixture: ComponentFixture<ClipBoardComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CodeBlockComponent ]
+      declarations: [ ClipBoardComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CodeBlockComponent);
+    fixture = TestBed.createComponent(ClipBoardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

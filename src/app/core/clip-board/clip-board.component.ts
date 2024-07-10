@@ -1,11 +1,11 @@
 import { Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
 
 @Component({
-  selector: 'app-code-block',
-  templateUrl: './code-block.component.html',
-  styleUrls: ['./code-block.component.css'],
+  selector: 'app-clip-board',
+  templateUrl: './clip-board.component.html',
+  styleUrls: ['./clip-board.component.css'],
 })
-export class CodeBlockComponent implements OnInit {
+export class ClipBoardComponent implements OnInit {
   copyButtonText: string = 'Copy code'; // Initial button text
   constructor() {}
 

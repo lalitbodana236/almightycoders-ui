@@ -19,6 +19,7 @@ import { TopicListComponent } from './core/resource/topic-list/topic-list.compon
 import { TopicDetailsComponent } from './core/resource/topic-details/topic-details.component';
 import { CodeBlockComponent } from './core/resource/code-block/code-block.component';
 import { HighlightPipe } from './filter/highlight.pipe';
+import { ClipBoardComponent } from './core/clip-board/clip-board.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { HighlightPipe } from './filter/highlight.pipe';
     TopicDetailsComponent,
     CodeBlockComponent,
     HighlightPipe,
+    ClipBoardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FullCalendarModule],
   providers: [],
