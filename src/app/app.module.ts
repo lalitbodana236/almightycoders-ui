@@ -17,7 +17,7 @@ import { ProblemComponent } from './core/problem/problem.component';
 import { ResourceComponent } from './core/resource/resource.component';
 import { TopicListComponent } from './core/resource/topic-list/topic-list.component';
 import { TopicDetailsComponent } from './core/resource/topic-details/topic-details.component';
-import { CodeBlockComponent } from './core/resource/code-block/code-block.component';
+
 import { HighlightPipe } from './filter/highlight.pipe';
 import { ClipBoardComponent } from './core/clip-board/clip-board.component';
 
@@ -37,7 +37,6 @@ import { ClipBoardComponent } from './core/clip-board/clip-board.component';
     ResourceComponent,
     TopicListComponent,
     TopicDetailsComponent,
-    CodeBlockComponent,
     HighlightPipe,
     ClipBoardComponent,
   ],
