@@ -1,5 +1,5 @@
 .fixed-height-card {
-  height: 40; /* Adjust the height as needed */
+  height: 512px; /* Adjust the height as needed */
   overflow: hidden; /* Hide overflow content */
   display: flex;
   flex-direction: column;
