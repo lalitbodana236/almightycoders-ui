@@ -1,0 +1,105 @@
+[
+  {
+    "description": "Java is a high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible. It is a general-purpose programming language intended to let application developers write once, run anywhere (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.\n\nHistory of Java\nJava was developed by James Gosling at Sun Microsystems (which has since been acquired by Oracle) and released in 1995. Java was originally designed for interactive television, but it was too advanced for the digital cable television industry at the time. The language has since become one of the most popular programming languages, especially for client-server web applications.\n\nKey Features of Java\nPlatform Independence: Java programs are compiled into bytecode, which can be executed on any system equipped with a Java Virtual Machine (JVM). This makes Java applications cross-platform.\n\nObject-Oriented: Java is fundamentally object-oriented, which helps in organizing complex programs, promoting code reuse, and improving software maintenance.\n\nSimple and Familiar: Java has a syntax that is easy to learn, especially for those familiar with C or C++. It eliminates many complex and error-prone features of other languages, like pointer arithmetic and manual memory management.\n\nRobust and Secure: Java provides strong memory management, exception handling, and type-checking mechanisms. Its runtime environment checks for runtime errors and provides security features that allow developing secure applications.\n\nMultithreaded: Java supports multithreaded programming, allowing developers to write programs that can perform many tasks simultaneously",
+    "name": "Java",
+    "topics": [
+      {
+        "name": "Introduction to Java",
+        "description": "Introduction of Java",
+        "subtopics": [
+          { "name": "What is Java?", "subtopics": [] },
+          { "name": "History and Features of Java", "subtopics": [] },
+          { "name": "Setting Up the Java Development Environment (JDK, IDEs)", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Basics of Java",
+        "description": "Introduction of Java",
+        "subtopics": [
+          { "name": "Writing Your First Java Program", "subtopics": [] },
+          { "name": "Java Syntax and Structure", "subtopics": [] },
+          { "name": "Comments in Java", "subtopics": [] },
+          { "name": "Data Types and Variables", "subtopics": [] },
+          { "name": "Operators in Java", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Control Flow Statements",
+        "subtopics": [
+          { "name": "If-Else Statements", "subtopics": [] },
+          { "name": "Switch Case", "subtopics": [] },
+          { "name": "Loops (For, While, Do-While)", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Methods",
+        "subtopics": [
+          { "name": "Defining and Calling Methods", "subtopics": [] },
+          { "name": "Method Parameters and Return Types", "subtopics": [] },
+          { "name": "Method Overloading", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Object-Oriented Programming (OOP) Concepts",
+        "subtopics": [
+          { "name": "Classes and Objects", "subtopics": [] },
+          { "name": "Constructors", "subtopics": [] },
+          { "name": "Inheritance", "subtopics": [] },
+          { "name": "Polymorphism", "subtopics": [] },
+          { "name": "Encapsulation", "subtopics": [] },
+          { "name": "Abstraction", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Arrays and Collections",
+        "subtopics": [
+          { "name": "Introduction to Arrays", "subtopics": [] },
+          { "name": "Array Operations", "subtopics": [] },
+          { "name": "Introduction to Collections (List, Set, Map)", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Exception Handling",
+        "subtopics": [
+          { "name": "Try-Catch Blocks", "subtopics": [] },
+          { "name": "Throwing Exceptions", "subtopics": [] },
+          { "name": "Custom Exceptions", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Input and Output (I/O)",
+        "subtopics": [
+          { "name": "Reading and Writing Files", "subtopics": [] },
+          { "name": "Handling Input from the User", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Java Libraries and APIs",
+        "subtopics": [
+          { "name": "Commonly Used Libraries (java.util, java.io, etc.)", "subtopics": [] },
+          { "name": "Using External Libraries (Maven, Gradle)", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Advanced Topics",
+        "subtopics": [
+          { "name": "Multithreading", "subtopics": [] },
+          { "name": "Generics", "subtopics": [] },
+          { "name": "Lambda Expressions", "subtopics": [] },
+          { "name": "Streams API", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Building and Running Java Applications",
+        "subtopics": [
+          { "name": "Creating Java Projects", "subtopics": [] },
+          { "name": "Packaging and Deploying Java Applications", "subtopics": [] }
+        ]
+      },
+      {
+        "name": "Best Practices and Coding Standards",
+        "subtopics": []
+      }
+    ]
+  }
+]

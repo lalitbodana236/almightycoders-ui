@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FullCalendarModule } from '@fullcalendar/angular'; // import FullCalendar
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +22,8 @@ import { TopicDetailsComponent } from './core/resource/topic-details/topic-detai
 import { HighlightPipe } from './filter/highlight.pipe';
 import { ClipBoardComponent } from './core/clip-board/clip-board.component';
 
+import { FormsModule } from '@angular/forms'; // Import FormsModule if not already imported
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +43,13 @@ import { ClipBoardComponent } from './core/clip-board/clip-board.component';
     HighlightPipe,
     ClipBoardComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FullCalendarModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FullCalendarModule,
+    FormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

@@ -1,15 +1,44 @@
-<!-- topic-list.component.html -->
 <div class="card">
   <div class="card-body">
-    <div class="card-header">Featured</div>
+    <div class="card-header">
+      <h1 class="card-title">{{ content.name }}</h1>
+    </div>
     <ul class="list-group list-group-flush">
       <li
         class="list-group-item"
-        *ngFor="let topic of topics"
-        (click)="selectTopic(topic)"
+        *ngFor="let topic of content.topics"
+        (click)="selectMainTopic(topic); $event.stopPropagation()"
+        [ngClass]="{ bold: isMainTopicSelected(topic) }"
       >
-        {{ topic }}
+        {{ topic.name }}
+        <ul *ngIf="isMainTopicSelected(topic)">
+          <ng-container
+            *ngTemplateOutlet="
+              nestedList;
+              context: { $implicit: topic.subtopics }
+            "
+          ></ng-container>
+        </ul>
       </li>
     </ul>
   </div>
 </div>
+
+<ng-template #nestedList let-subtopics>
+  <li
+    class="list-group-item"
+    *ngFor="let subtopic of subtopics"
+    (click)="selectSubTopic(subtopic); $event.stopPropagation()"
+    [ngClass]="{ bold: isSubTopicSelected(subtopic) }"
+  >
+    {{ subtopic.name }}
+    <ul *ngIf="isSubTopicSelected(subtopic)">
+      <ng-container
+        *ngTemplateOutlet="
+          nestedList;
+          context: { $implicit: subtopic.subtopics }
+        "
+      ></ng-container>
+    </ul>
+  </li>
+</ng-template>

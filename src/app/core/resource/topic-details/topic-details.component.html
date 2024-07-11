@@ -2,12 +2,12 @@
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">
-      {{ selectedTopic ? selectedTopic : "Special title treatment" }}
+      {{ selectedTopic ? selectedTopic.name : "Special title treatment" }}
     </h5>
     <p class="card-text" #cardContent>
       {{
-        selectedTopic
-          ? "Details for " + selectedTopic
+        selectedTopic.name
+          ? "Details for " + selectedTopic.description
           : "Sometimes caching issues can cause problems. Clear the npm cache and restart your development server:".repeat(
               10
             )

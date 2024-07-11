@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.list-group-item {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}

@@ -10,3 +10,5 @@ npm install @angular/animations@14.3.0 @angular/common@14.3.0 @angular/compiler@
 
 npm install highlight.js
 npm install @highlightjs/angular-highlight-js
+
+npm install ngx-quill

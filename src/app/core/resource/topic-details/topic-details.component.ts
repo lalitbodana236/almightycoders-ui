@@ -15,7 +15,7 @@ import {
 export class TopicDetailsComponent implements OnInit {
   ngOnInit(): void {}
 
-  @Input() selectedTopic: string | undefined;
+  @Input() selectedTopic: any | undefined;
   cardHeight: number | undefined;
   defaultHeight: number = 500; // default height in pixels
 
