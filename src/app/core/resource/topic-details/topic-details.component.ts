@@ -18,7 +18,11 @@ import Quill from 'quill';
 })
 export class TopicDetailsComponent implements OnInit, AfterViewInit, OnChanges {
   quill!: Quill;
-  ngOnInit(): void {}
+  @Input() isReadOnly: boolean = false;
+
+  ngOnInit(): void {
+    this.isReadOnly = false;
+  }
 
   @Input() selectedTopic: any | undefined;
   cardHeight: number | undefined;
@@ -28,13 +32,7 @@ export class TopicDetailsComponent implements OnInit, AfterViewInit, OnChanges {
 
   ngAfterViewInit() {
     this.updateCardHeight();
-
-    
-
-    
   }
-
-  
 
   ngOnChanges() {
     this.updateCardHeight();

@@ -8,7 +8,8 @@ import {
 } from '@angular/core';
 
 import Quill from 'quill';
-import Delta from 'quill-delta';
+
+import hljs from 'highlight.js';
 
 @Component({
   selector: 'app-quill-editor',
@@ -19,6 +20,8 @@ export class QuillEditorComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {}
 
   @Input() content: string = ''; // Content to display in the editor
+  @Input() isReadOnly: boolean = false; // Determines if the editor is read-only
+
   quill!: Quill;
 
   constructor(private el: ElementRef, private renderer: Renderer2) {}
@@ -56,20 +59,45 @@ export class QuillEditorComponent implements OnInit, AfterViewInit {
     this.quill = new Quill('#editor', {
       modules: {
         //toolbar: '#toolbar', // Attach the toolbar to the Quill editor
-        toolbar: this.toolbarOptions,
+        toolbar: this.isReadOnly ? false : this.toolbarOptions,
+        syntax: { hljs },
       },
+      readOnly: this.isReadOnly,
       placeholder: 'Compose an epic...',
       theme: 'snow', // Ensure this matches your CSS import
     });
 
-    // Set initial content if provided
+    const Delta = Quill.import('delta');
+    this.quill.setContents(
+      new Delta()
+        .insert('const language = "JavaScript";')
+        .insert('\n', { 'code-block': 'javascript' })
+        .insert('console.log("I love " + language + "!");')
+        .insert('\n', { 'code-block': 'javascript' })
+    );
 
-    this.quill.clipboard.dangerouslyPasteHTML(this.content);
+    // Set initial content if provided
+    const savedContent = localStorage.getItem('quillContent');
+    if (savedContent) {
+      this.quill.clipboard.dangerouslyPasteHTML(savedContent);
+    } else if (this.content) {
+      this.quill.clipboard.dangerouslyPasteHTML(this.content);
+    }
   }
 
   resizeEditor() {
     const editorElement = this.el.nativeElement.querySelector('#editor');
     const contentHeight = editorElement.scrollHeight;
     this.renderer.setStyle(editorElement, 'height', `${contentHeight}px`);
+  }
+
+  saveContent() {
+    const editorContentHTML = this.quill.root.innerHTML;
+    const editorContentText = this.quill.getText();
+
+    console.log('Editor Content as HTML:', editorContentHTML);
+    console.log('Editor Content as Plain Text:', editorContentText);
+
+    localStorage.setItem('quillContent', editorContentHTML);
   }
 }

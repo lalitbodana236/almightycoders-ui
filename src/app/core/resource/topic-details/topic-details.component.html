@@ -14,6 +14,10 @@
       }}
     </p>
     <app-clip-board language="css" [code]="codeSnippet"></app-clip-board>
-    <app-quill-editor [content]="selectedTopic?.description"></app-quill-editor>
+
+    <app-quill-editor
+      [content]="selectedTopic?.description"
+      [isReadOnly]="isReadOnly"
+    ></app-quill-editor>
   </div>
 </div>
