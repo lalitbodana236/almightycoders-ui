@@ -1,18 +1,23 @@
 import {
+  AfterViewInit,
   Component,
   ElementRef,
   HostListener,
   Input,
   OnInit,
   Renderer2,
+  OnChanges,
 } from '@angular/core';
+
+import Quill from 'quill';
 
 @Component({
   selector: 'app-topic-details',
   templateUrl: './topic-details.component.html',
   styleUrls: ['./topic-details.component.css'],
 })
-export class TopicDetailsComponent implements OnInit {
+export class TopicDetailsComponent implements OnInit, AfterViewInit, OnChanges {
+  quill!: Quill;
   ngOnInit(): void {}
 
   @Input() selectedTopic: any | undefined;
@@ -23,7 +28,13 @@ export class TopicDetailsComponent implements OnInit {
 
   ngAfterViewInit() {
     this.updateCardHeight();
+
+    
+
+    
   }
+
+  
 
   ngOnChanges() {
     this.updateCardHeight();
@@ -63,6 +74,6 @@ export class TopicDetailsComponent implements OnInit {
 
   .btn-primary {
     margin-top: 10px;
-  }
+ 
   `;
 }

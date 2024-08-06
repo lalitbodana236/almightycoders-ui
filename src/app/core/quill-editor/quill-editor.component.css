@@ -1,0 +1,30 @@
+#editor-container {
+  margin: 20px 0;
+  overflow-y: hidden; /* Prevent scroll bars from appearing */
+}
+
+#toolbar {
+  border: 1px solid #ccc; /* Border for toolbar */
+  border-bottom: none; /* No border at the bottom, to connect with editor */
+  padding: 8px; /* Padding inside the toolbar */
+}
+
+#editor {
+  min-height: 150px; /* Ensure a minimum height for the editor */
+  overflow-y: hidden; /* Prevent scroll bars */
+  padding: 10px; /* Padding inside the editor */
+  box-sizing: border-box; /* Include padding in height calculations */
+  resize: none; /* Prevent manual resizing */
+  border: 1px solid #ccc; /* Border matching the toolbar */
+  border-top: none; /* Remove top border to connect with toolbar */
+  transition: height 0.2s ease-in-out; /* Smooth height transition */
+}
+
+.ql-toolbar.ql-snow {
+  border-radius: 4px 4px 0 0; /* Rounded corners on the top */
+}
+
+.ql-container.ql-snow {
+  border-radius: 0 0 4px 4px; /* Rounded corners on the bottom */
+  padding: 0; /* Remove padding from the quill container */
+}

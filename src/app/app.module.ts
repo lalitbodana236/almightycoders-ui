@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FullCalendarModule } from '@fullcalendar/angular'; // import FullCalendar
+
+import { CKEditorModule } from 'ckeditor4-angular';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -21,8 +23,8 @@ import { TopicDetailsComponent } from './core/resource/topic-details/topic-detai
 
 import { HighlightPipe } from './filter/highlight.pipe';
 import { ClipBoardComponent } from './core/clip-board/clip-board.component';
-
-import { FormsModule } from '@angular/forms'; // Import FormsModule if not already imported
+import { FormsModule } from '@angular/forms';
+import { QuillEditorComponent } from './core/quill-editor/quill-editor.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +44,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule if not alrea
     TopicDetailsComponent,
     HighlightPipe,
     ClipBoardComponent,
+    QuillEditorComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,6 +52,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule if not alrea
     FullCalendarModule,
     FormsModule,
     HttpClientModule,
+    CKEditorModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
