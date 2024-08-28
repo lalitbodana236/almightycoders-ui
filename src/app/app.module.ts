@@ -25,6 +25,7 @@ import { HighlightPipe } from './filter/highlight.pipe';
 import { ClipBoardComponent } from './core/clip-board/clip-board.component';
 import { FormsModule } from '@angular/forms';
 import { QuillEditorComponent } from './core/quill-editor/quill-editor.component';
+import { ProjectComponent } from './core/project/project.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { QuillEditorComponent } from './core/quill-editor/quill-editor.component
     HighlightPipe,
     ClipBoardComponent,
     QuillEditorComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

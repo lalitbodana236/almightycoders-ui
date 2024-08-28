@@ -5,6 +5,7 @@ import { MainComponent } from './core/main/main.component';
 import { ProblemComponent } from './core/problem/problem.component';
 import { ContestComponent } from './core/contest/contest.component';
 import { ResourceComponent } from './core/resource/resource.component';
+import { ProjectComponent } from './core/project/project.component';
 
 // Define your routes here
 const routes: Routes = [
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'problems', component: ProblemComponent },
   { path: 'contest', component: ContestComponent },
   { path: 'resource', component: ResourceComponent },
+  { path: 'project', component: ProjectComponent },
 
   // Add more routes as needed
 ];
