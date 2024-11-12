@@ -1,0 +1,11 @@
+ngh --dir docs
+
+
+ng build --output-path docs --base-href /almightycoders-ui/
+
+npm install -g angular-cli-ghpages
+
+ngh --dir docs
+
+
+
